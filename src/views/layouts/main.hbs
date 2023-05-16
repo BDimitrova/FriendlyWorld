@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/styles/styles.css" />
-    <title>Home Page</title>
+    <link rel="stylesheet" href="../static/styles/styles.css" />
+    <title>{{title}}</title>
 </head>
 
 <body>
@@ -15,8 +15,8 @@
             <!-- Navigation -->
             <nav>
                 <div>
-                    <a href="#">Home</a>
-                    <a href="#">Dashboard</a>
+                    <a href="/">Home</a>
+                    <a href="/animals/dashboard">Dashboard</a>
                     <a href="#">Search</a>
                 </div>
 
@@ -28,8 +28,8 @@
 
                 <!-- Guest users -->
                 <div class="guest">
-                    <a href="#">Login</a>
-                    <a href="#">Register</a>
+                    <a href="/auth/login">Login</a>
+                    <a href="/auth/register">Register</a>
                 </div>
             </nav>
         </header>
