@@ -50,7 +50,7 @@ let animalSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 animalSchema.method('getDonation', function () {
-    return this.buyer.map(x => x._id);
+    return this.donation.map(x => x._id);
 })
 
 let Animals = mongoose.model('Animals', animalSchema);

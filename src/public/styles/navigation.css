@@ -136,3 +136,32 @@ main #last-added div p {
   text-align: left;
   font-weight: bold;
 }
+
+.errorPage {
+  background-color:white;
+  background-size: cover;
+}
+
+#errorPage {
+  margin-bottom: 0px;
+}
+
+#errorPage img {
+  width: 50%;
+}
+
+#errorPage div{
+  width: 30%;
+  float: right;
+  text-align: center;
+  margin: 10%;
+}
+
+#errorPage div h2 {
+  font-size: 40px;
+}
+
+#errorPage div h3 {
+  font-size: 30px;
+  font-weight: lighter;
+}

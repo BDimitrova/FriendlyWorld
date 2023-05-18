@@ -1,4 +1,4 @@
-.create, .register, .login, .edit, .dashboard, .details, .search{
+.create, .register, .login, .edit, .dashboard, .details, .search, .errorPage{
   min-height: 80vh;
   width: 100%;
 }
