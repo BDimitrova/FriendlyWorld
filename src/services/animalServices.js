@@ -10,8 +10,8 @@ exports.delete = (animalId) => Animals.findByIdAndDelete(animalId);
 
 exports.updateOne = (animalId, animalData) => Animals.findByIdAndUpdate(animalId, animalData);
 
-// exports.search = (animalText) => {
-//     if (cryptoText) {
-//         return (Animals.find({ name: {$regex: cryptoText, $options: 'i'} }).lean());
-//     }
-// }
+exports.search = (animalText) => {
+    if (animalText) {
+        return (Animals.find({ location: {$regex: animalText, $options: 'i'} }).lean());
+    }
+}
