@@ -2,8 +2,10 @@ const router = require('express').Router();
 
 const animalService = require('../services/animalServices');
 
-router.get('/', (req, res) => {
-    res.render('home');
+router.get('/', async (req, res) => {
+    let animal = await animalService.findTheThree();
+    animal = animal.slice(0, 3);
+    res.render('home', { animal });
 });
 
 router.get('/search', async (req, res) => {
@@ -14,8 +16,6 @@ router.get('/search', async (req, res) => {
     if (animal == undefined) {
         animal = await animalService.getAll();
     }
-
-    console.log(animal);
 
     res.render('search', { animal })
 })

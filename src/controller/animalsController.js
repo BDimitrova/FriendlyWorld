@@ -18,7 +18,7 @@ router.post('/create', isAuth, async (req, res) => {
         res.redirect('/animals/dashboard');
     } catch (error) {
         console.log(error);
-        // res.render('crypto/create', { error: getErrorMessage(error) });
+        res.render('animals/create', { error: getErrorMessage(error) });
     }
 });
 

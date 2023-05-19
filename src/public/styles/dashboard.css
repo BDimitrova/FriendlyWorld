@@ -1,5 +1,5 @@
-.create, .register, .login, .edit, .dashboard, .details, .search, .errorPage{
-  min-height: 80vh;
+.create, .register, .login, .edit, .dashboard, .details, .search, .errorPage, .home{
+  min-height: 90vh;
   width: 100%;
 }
 

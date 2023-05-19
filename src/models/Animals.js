@@ -9,12 +9,13 @@ let animalSchema = new mongoose.Schema({
     years: {
         type: Number,
         required: true,
-        minValue: 0,
+        minValue: 1,
+        maxValue: 100,
     },
     kind: {
         type: String,
         required: true,
-        minLength: 2,
+        minLength: 3,
     },
     image: {
         type: String,
@@ -24,17 +25,20 @@ let animalSchema = new mongoose.Schema({
     need: {
         type: String,
         required: true,
-        minLength: 2,
+        minLength: 3,
+        maxLength: 100,
     },
     location: {
         type: String,
         required: true,
-        minLength: 2,
+        minLength: 5,
+        maxLength: 15,
     },
     description: {
         type: String,
         required: true,
-        minLength: 10,
+        minLength: 5,
+        maxLength: 50,
     },
     owner: {
         type: mongoose.Types.ObjectId,

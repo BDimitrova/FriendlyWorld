@@ -12,6 +12,8 @@ exports.updateOne = (animalId, animalData) => Animals.findByIdAndUpdate(animalId
 
 exports.search = (animalText) => {
     if (animalText) {
-        return (Animals.find({ location: {$regex: animalText, $options: 'i'} }).lean());
+        return (Animals.find({ location: { $regex: animalText, $options: 'i' } }).lean());
     }
 }
+
+exports.findTheThree = () => Animals.find({}).sort({ createdAt: -1 }).lean();
